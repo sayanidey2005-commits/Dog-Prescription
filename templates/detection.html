@@ -1,0 +1,137 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="detection-container">
+    <div class="detection-header" style="text-align: center; margin-bottom: 3rem;">
+        <h1 style="font-size: 2.5rem; color: var(--dark); margin-bottom: 1rem;">
+            <i class="fas fa-camera"></i> Prescription Scanner
+        </h1>
+        <p style="font-size: 1.2rem; color: #666; max-width: 600px; margin: 0 auto;">
+            Upload your dog's prescription and get instant, easy-to-understand analysis with personalized diet recommendations.
+        </p>
+    </div>
+
+    <div class="upload-area" id="uploadArea">
+        <div class="upload-icon">
+            <i class="fas fa-cloud-upload-alt"></i>
+        </div>
+        <h3>Upload Prescription</h3>
+        <p>Drag & drop your file here or click to browse</p>
+        <p style="font-size: 0.9rem; color: #888; margin-top: 0.5rem;">
+            Supported formats: PDF, JPG, PNG (Max 16MB)
+        </p>
+        <div class="upload-btn">
+            <i class="fas fa-search"></i> Choose File
+        </div>
+        <input type="file" id="fileInput" class="file-input" accept=".pdf,.jpg,.jpeg,.png">
+    </div>
+
+    <div class="loading" id="loading">
+        <div class="loading-spinner"></div>
+        <p>Analyzing your prescription... This may take a few moments.</p>
+    </div>
+
+    <div class="results-container" id="resultsContainer">
+        <!-- Results will be displayed here -->
+    </div>
+
+    <div class="info-sections" style="margin-top: 4rem;">
+        <div class="info-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem;">
+            <div class="info-card" style="background: white; padding: 2rem; border-radius: 15px; box-shadow: 0 5px 15px rgba(0,0,0,0.1);">
+                <h3 style="color: var(--primary); margin-bottom: 1rem;">
+                    <i class="fas fa-shield-alt"></i> Privacy First
+                </h3>
+                <p>Your dog's health information is completely private. We don't store your prescriptions or personal data.</p>
+            </div>
+            
+            <div class="info-card" style="background: white; padding: 2rem; border-radius: 15px; box-shadow: 0 5px 15px rgba(0,0,0,0.1);">
+                <h3 style="color: var(--primary); margin-bottom: 1rem;">
+                    <i class="fas fa-stethoscope"></i> Vet-Approved
+                </h3>
+                <p>Our recommendations are based on veterinary guidelines, but always consult your vet for medical advice.</p>
+            </div>
+            
+            <div class="info-card" style="background: white; padding: 2rem; border-radius: 15px; box-shadow: 0 5px 15px rgba(0,0,0,0.1);">
+                <h3 style="color: var(--primary); margin-bottom: 1rem;">
+                    <i class="fas fa-mobile-alt"></i> Mobile Friendly
+                </h3>
+                <p>Easily upload prescriptions from your phone camera and access results on any device.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+.medications-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.medication-card {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 10px;
+    text-align: center;
+    border-left: 4px solid var(--secondary);
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
+
+.med-category {
+    background: var(--light);
+    color: var(--dark);
+    padding: 0.3rem 0.8rem;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+
+.diet-section {
+    margin-bottom: 2rem;
+    padding: 1.5rem;
+    background: white;
+    border-radius: 10px;
+}
+
+.food-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.food-item {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+    background: #f8f9fa;
+    border-radius: 8px;
+}
+
+.food-item.avoid {
+    background: #ffe6e6;
+}
+
+.food-item i {
+    color: var(--secondary);
+}
+
+.food-item.avoid i {
+    color: var(--primary);
+}
+
+.schedule-grid {
+    display: grid;
+    gap: 1rem;
+}
+
+.schedule-item {
+    padding: 1rem;
+    background: white;
+    border-radius: 8px;
+    border-left: 4px solid var(--accent);
+}
+</style>
+{% endblock %}

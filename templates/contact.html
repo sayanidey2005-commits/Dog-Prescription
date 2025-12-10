@@ -1,0 +1,244 @@
+{% extends "base.html" %}
+
+{% block content %}
+<!-- Contact Hero -->
+<section class="contact-hero" style="background: linear-gradient(135deg, #ff6b6b 0%, #ffd166 100%); color: white; padding: 10rem 2rem 6rem; text-align: center;">
+    <div class="container" style="max-width: 800px; margin: 0 auto;">
+        <h1 style="font-size: 3rem; margin-bottom: 1rem;">We're Here to Help!</h1>
+        <p style="font-size: 1.3rem; opacity: 0.9;">Have questions about your dog's prescription? We're just a bark away!</p>
+    </div>
+</section>
+
+<!-- Contact Main -->
+<section class="contact-main" style="padding: 6rem 2rem; background: white;">
+    <div class="container" style="max-width: 1200px; margin: 0 auto;">
+        <div class="contact-grid" style="display: grid; grid-template-columns: 1fr 1fr; gap: 4rem;">
+            <!-- Contact Form -->
+            <div class="contact-form">
+                <h2 style="font-size: 2.5rem; color: var(--dark); margin-bottom: 2rem;">Send us a Message</h2>
+                <form id="contactForm" style="display: grid; gap: 1.5rem;">
+                    <div class="form-group">
+                        <label for="name" style="display: block; margin-bottom: 0.5rem; font-weight: 500; color: var(--dark);">Your Name</label>
+                        <input type="text" id="name" name="name" required style="width: 100%; padding: 1rem; border: 2px solid #e0e0e0; border-radius: 10px; font-size: 1rem; transition: border-color 0.3s ease;">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email" style="display: block; margin-bottom: 0.5rem; font-weight: 500; color: var(--dark);">Email Address</label>
+                        <input type="email" id="email" name="email" required style="width: 100%; padding: 1rem; border: 2px solid #e0e0e0; border-radius: 10px; font-size: 1rem; transition: border-color 0.3s ease;">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="subject" style="display: block; margin-bottom: 0.5rem; font-weight: 500; color: var(--dark);">Subject</label>
+                        <input type="text" id="subject" name="subject" required style="width: 100%; padding: 1rem; border: 2px solid #e0e0e0; border-radius: 10px; font-size: 1rem; transition: border-color 0.3s ease;">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="message" style="display: block; margin-bottom: 0.5rem; font-weight: 500; color: var(--dark);">Your Message</label>
+                        <textarea id="message" name="message" rows="6" required style="width: 100%; padding: 1rem; border: 2px solid #e0e0e0; border-radius: 10px; font-size: 1rem; transition: border-color 0.3s ease; resize: vertical;"></textarea>
+                    </div>
+                    
+                    <button type="submit" class="btn" style="background: var(--gradient); color: white; border: none; padding: 1.2rem 2rem; font-size: 1.1rem;">
+                        <i class="fas fa-paper-plane"></i> Send Message
+                    </button>
+                </form>
+            </div>
+            
+            <!-- Contact Info -->
+            <div class="contact-info">
+                <h2 style="font-size: 2.5rem; color: var(--dark); margin-bottom: 2rem;">Get in Touch</h2>
+                
+                <div class="contact-methods" style="display: grid; gap: 2rem; margin-bottom: 3rem;">
+                    <div class="contact-method" style="display: flex; align-items: flex-start; gap: 1rem;">
+                        <div class="contact-icon" style="background: var(--gradient); color: white; width: 50px; height: 50px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 1.2rem;">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div>
+                            <h3 style="color: var(--dark); margin-bottom: 0.5rem;">Visit Our Office</h3>
+                            <p style="color: #666;">123 Pet Care Avenue<br>San Francisco, CA 94102</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-method" style="display: flex; align-items: flex-start; gap: 1rem;">
+                        <div class="contact-icon" style="background: var(--gradient); color: white; width: 50px; height: 50px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 1.2rem;">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div>
+                            <h3 style="color: var(--dark); margin-bottom: 0.5rem;">Call Us</h3>
+                            <p style="color: #666;">+1 (555) 123-PAWS<br>Mon-Fri: 9AM-6PM PST</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-method" style="display: flex; align-items: flex-start; gap: 1rem;">
+                        <div class="contact-icon" style="background: var(--gradient); color: white; width: 50px; height: 50px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 1.2rem;">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div>
+                            <h3 style="color: var(--dark); margin-bottom: 0.5rem;">Email Us</h3>
+                            <p style="color: #666;">help@pawscript.com<br>support@pawscript.com</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Emergency Contact -->
+                <div class="emergency-contact" style="background: #fff3cd; border: 2px solid #ffeaa7; border-radius: 15px; padding: 2rem;">
+                    <h3 style="color: #856404; margin-bottom: 1rem; display: flex; align-items: center; gap: 0.5rem;">
+                        <i class="fas fa-exclamation-triangle"></i>
+                        Emergency Contact
+                    </h3>
+                    <p style="color: #856404; margin-bottom: 1rem;">
+                        If your pet is experiencing a medical emergency, please contact your local veterinary emergency clinic immediately.
+                    </p>
+                    <div style="display: flex; gap: 1rem;">
+                        <a href="tel:15551237297" class="btn" style="background: #dc3545; color: white; padding: 0.8rem 1.5rem; font-size: 0.9rem;">
+                            <i class="fas fa-phone"></i> Emergency Hotline
+                        </a>
+                        <a href="#" class="btn" style="background: var(--dark); color: white; padding: 0.8rem 1.5rem; font-size: 0.9rem;">
+                            <i class="fas fa-map-marker-alt"></i> Find Emergency Vet
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- FAQ Section -->
+<section class="faq" style="padding: 6rem 2rem; background: var(--light);">
+    <div class="container" style="max-width: 1000px; margin: 0 auto;">
+        <h2 class="section-title">Frequently Asked Questions</h2>
+        <div class="faq-grid" style="display: grid; gap: 1.5rem; margin-top: 3rem;">
+            <div class="faq-item" style="background: white; padding: 2rem; border-radius: 15px; box-shadow: 0 5px 15px rgba(0,0,0,0.1);">
+                <h3 style="color: var(--dark); margin-bottom: 1rem; display: flex; align-items: center; gap: 0.5rem;">
+                    <i class="fas fa-question-circle" style="color: var(--primary);"></i>
+                    How accurate is the prescription analysis?
+                </h3>
+                <p style="color: #666; line-height: 1.6;">
+                    Our AI achieves 95% accuracy in reading standard veterinary prescriptions. However, we always recommend 
+                    verifying with your veterinarian for critical medical decisions.
+                </p>
+            </div>
+            
+            <div class="faq-item" style="background: white; padding: 2rem; border-radius: 15px; box-shadow: 0 5px 15px rgba(0,0,0,0.1);">
+                <h3 style="color: var(--dark); margin-bottom: 1rem; display: flex; align-items: center; gap: 0.5rem;">
+                    <i class="fas fa-question-circle" style="color: var(--primary);"></i>
+                    Is my pet's data secure?
+                </h3>
+                <p style="color: #666; line-height: 1.6;">
+                    Absolutely! We don't store your pet's prescriptions or personal information. All analysis happens 
+                    in real-time and files are deleted after processing.
+                </p>
+            </div>
+            
+            <div class="faq-item" style="background: white; padding: 2rem; border-radius: 15px; box-shadow: 0 5px 15px rgba(0,0,0,0.1);">
+                <h3 style="color: var(--dark); margin-bottom: 1rem; display: flex; align-items: center; gap: 0.5rem;">
+                    <i class="fas fa-question-circle" style="color: var(--primary);"></i>
+                    Can I use this for cats or other pets?
+                </h3>
+                <p style="color: #666; line-height: 1.6;">
+                    Currently, we specialize in canine healthcare. We're working on expanding to other pets soon!
+                </p>
+            </div>
+            
+            <div class="faq-item" style="background: white; padding: 2rem; border-radius: 15px; box-shadow: 0 5px 15px rgba(0,0,0,0.1);">
+                <h3 style="color: var(--dark); margin-bottom: 1rem; display: flex; align-items: center; gap: 0.5rem;">
+                    <i class="fas fa-question-circle" style="color: var(--primary);"></i>
+                    What if the prescription is handwritten?
+                </h3>
+                <p style="color: #666; line-height: 1.6;">
+                    We can process clear handwritten prescriptions, but typed prescriptions yield the best results. 
+                    For unclear handwriting, our support team can help manually.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Support Section -->
+<section class="support" style="padding: 6rem 2rem; background: white;">
+    <div class="container" style="max-width: 1200px; margin: 0 auto; text-align: center;">
+        <h2 class="section-title">Need Immediate Help?</h2>
+        <p style="font-size: 1.2rem; color: #666; max-width: 600px; margin: 0 auto 3rem;">
+            Our support team is here to help you with any questions about your dog's prescription or our service.
+        </p>
+        
+        <div class="support-options" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem;">
+            <div class="support-option" style="padding: 2rem; border-radius: 15px; background: var(--light);">
+                <div class="support-icon" style="font-size: 3rem; color: var(--primary); margin-bottom: 1rem;">
+                    <i class="fas fa-comments"></i>
+                </div>
+                <h3 style="color: var(--dark); margin-bottom: 1rem;">Live Chat</h3>
+                <p style="color: #666; margin-bottom: 1.5rem;">Get instant answers from our support team</p>
+                <button class="btn" style="background: var(--primary); color: white; padding: 0.8rem 1.5rem;">
+                    Start Chat
+                </button>
+            </div>
+            
+            <div class="support-option" style="padding: 2rem; border-radius: 15px; background: var(--light);">
+                <div class="support-icon" style="font-size: 3rem; color: var(--secondary); margin-bottom: 1rem;">
+                    <i class="fas fa-video"></i>
+                </div>
+                <h3 style="color: var(--dark); margin-bottom: 1rem;">Video Call</h3>
+                <p style="color: #666; margin-bottom: 1.5rem;">Screen share for prescription help</p>
+                <button class="btn" style="background: var(--secondary); color: white; padding: 0.8rem 1.5rem;">
+                    Schedule Call
+                </button>
+            </div>
+            
+            <div class="support-option" style="padding: 2rem; border-radius: 15px; background: var(--light);">
+                <div class="support-icon" style="font-size: 3rem; color: var(--accent); margin-bottom: 1rem;">
+                    <i class="fas fa-envelope-open-text"></i>
+                </div>
+                <h3 style="color: var(--dark); margin-bottom: 1rem;">Email Support</h3>
+                <p style="color: #666; margin-bottom: 1.5rem;">Detailed responses within 24 hours</p>
+                <button class="btn" style="background: var(--accent); color: var(--dark); padding: 0.8rem 1.5rem;">
+                    Email Us
+                </button>
+            </div>
+        </div>
+    </div>
+</section>
+
+<style>
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: var(--primary);
+    box-shadow: 0 0 0 3px rgba(255, 107, 107, 0.1);
+}
+
+.contact-icon {
+    flex-shrink: 0;
+}
+
+@media (max-width: 768px) {
+    .contact-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+    
+    .support-options {
+        grid-template-columns: 1fr;
+    }
+}
+</style>
+
+<script>
+document.getElementById('contactForm').addEventListener('submit', function(e) {
+    e.preventDefault();
+    
+    // Get form data
+    const formData = {
+        name: document.getElementById('name').value,
+        email: document.getElementById('email').value,
+        subject: document.getElementById('subject').value,
+        message: document.getElementById('message').value
+    };
+    
+    // Show success message (in a real app, you'd send this to your backend)
+    alert('Thank you for your message! We\'ll get back to you within 24 hours.');
+    
+    // Reset form
+    this.reset();
+});
+</script>
+{% endblock %}

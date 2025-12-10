@@ -1,0 +1,168 @@
+{% extends "base.html" %}
+
+{% block content %}
+<!-- About Hero Section -->
+<section class="about-hero" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 10rem 2rem 6rem; text-align: center;">
+    <div class="container" style="max-width: 800px; margin: 0 auto;">
+        <h1 style="font-size: 3rem; margin-bottom: 1rem;">Our Paw-some Story</h1>
+        <p style="font-size: 1.3rem; opacity: 0.9;">Transforming veterinary care through technology and compassion</p>
+    </div>
+</section>
+
+<!-- Mission Section -->
+<section class="mission" style="padding: 6rem 2rem; background: white;">
+    <div class="container" style="max-width: 1200px; margin: 0 auto;">
+        <div class="mission-grid" style="display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: center;">
+            <div class="mission-content">
+                <h2 style="font-size: 2.5rem; color: var(--dark); margin-bottom: 1.5rem;">Why We Started This Journey</h2>
+                <p style="font-size: 1.1rem; line-height: 1.8; color: #666; margin-bottom: 2rem;">
+                    After watching countless pet parents struggle to understand their furry friends' medical prescriptions, 
+                    we knew there had to be a better way. PawScript was born from a simple idea: every pet owner deserves 
+                    to understand their dog's healthcare without the stress and confusion of medical jargon.
+                </p>
+                <div class="mission-stats" style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem;">
+                    <div class="stat" style="text-align: center;">
+                        <div style="font-size: 2.5rem; font-weight: bold; color: var(--primary);">10K+</div>
+                        <div style="color: #666;">Prescriptions Read</div>
+                    </div>
+                    <div class="stat" style="text-align: center;">
+                        <div style="font-size: 2.5rem; font-weight: bold; color: var(--secondary);">95%</div>
+                        <div style="color: #666;">Accuracy Rate</div>
+                    </div>
+                    <div class="stat" style="text-align: center;">
+                        <div style="font-size: 2.5rem; font-weight: bold; color: var(--accent);">24/7</div>
+                        <div style="color: #666;">Support Available</div>
+                    </div>
+                </div>
+            </div>
+            <div class="mission-image" style="text-align: center;">
+                <div style="background: var(--gradient); border-radius: 20px; padding: 3rem; color: white;">
+                    <i class="fas fa-heart" style="font-size: 4rem; margin-bottom: 1rem;"></i>
+                    <h3 style="margin-bottom: 1rem;">Our Promise</h3>
+                    <p>Making pet healthcare accessible, understandable, and stress-free for every family.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Team Section -->
+<section class="team" style="padding: 6rem 2rem; background: var(--light);">
+    <div class="container" style="max-width: 1200px; margin: 0 auto;">
+        <h2 class="section-title">Meet Our Pack</h2>
+        <div class="team-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; margin-top: 3rem;">
+            <div class="team-member" style="background: white; padding: 2rem; border-radius: 20px; text-align: center; box-shadow: 0 5px 15px rgba(0,0,0,0.1);">
+                <div class="member-avatar" style="width: 120px; height: 120px; background: var(--gradient); border-radius: 50%; margin: 0 auto 1.5rem; display: flex; align-items: center; justify-content: center; font-size: 2.5rem; color: white;">
+                    <i class="fas fa-user-md"></i>
+                </div>
+                <h3 style="color: var(--dark); margin-bottom: 0.5rem;">Dr. Sarah Chen</h3>
+                <p style="color: var(--primary); font-weight: 500; margin-bottom: 1rem;">Lead Veterinarian</p>
+                <p style="color: #666;">With 15 years of veterinary experience, Sarah ensures our medical advice is accurate and up-to-date.</p>
+            </div>
+            
+            <div class="team-member" style="background: white; padding: 2rem; border-radius: 20px; text-align: center; box-shadow: 0 5px 15px rgba(0,0,0,0.1);">
+                <div class="member-avatar" style="width: 120px; height: 120px; background: var(--gradient); border-radius: 50%; margin: 0 auto 1.5rem; display: flex; align-items: center; justify-content: center; font-size: 2.5rem; color: white;">
+                    <i class="fas fa-code"></i>
+                </div>
+                <h3 style="color: var(--dark); margin-bottom: 0.5rem;">Mike Rodriguez</h3>
+                <p style="color: var(--primary); font-weight: 500; margin-bottom: 1rem;">Tech Lead</p>
+                <p style="color: #666;">Mike combines his passion for pets with AI technology to create seamless user experiences.</p>
+            </div>
+            
+            <div class="team-member" style="background: white; padding: 2rem; border-radius: 20px; text-align: center; box-shadow: 0 5px 15px rgba(0,0,0,0.1);">
+                <div class="member-avatar" style="width: 120px; height: 120px; background: var(--gradient); border-radius: 50%; margin: 0 auto 1.5rem; display: flex; align-items: center; justify-content: center; font-size: 2.5rem; color: white;">
+                    <i class="fas fa-paw"></i>
+                </div>
+                <h3 style="color: var(--dark); margin-bottom: 0.5rem;">Emily Thompson</h3>
+                <p style="color: var(--primary); font-weight: 500; margin-bottom: 1rem;">Animal Nutritionist</p>
+                <p style="color: #666;">Emily designs our diet plans with a focus on breed-specific needs and medical conditions.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Values Section -->
+<section class="values" style="padding: 6rem 2rem; background: white;">
+    <div class="container" style="max-width: 1200px; margin: 0 auto;">
+        <h2 class="section-title">Our Values</h2>
+        <div class="values-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: 2rem; margin-top: 3rem;">
+            <div class="value-card" style="padding: 2rem; border-radius: 15px; background: var(--light);">
+                <div class="value-icon" style="font-size: 3rem; color: var(--primary); margin-bottom: 1rem;">
+                    <i class="fas fa-shield-alt"></i>
+                </div>
+                <h3 style="color: var(--dark); margin-bottom: 1rem;">Trust & Accuracy</h3>
+                <p style="color: #666;">Every piece of information is verified by veterinary professionals to ensure your pet's safety.</p>
+            </div>
+            
+            <div class="value-card" style="padding: 2rem; border-radius: 15px; background: var(--light);">
+                <div class="value-icon" style="font-size: 3rem; color: var(--secondary); margin-bottom: 1rem;">
+                    <i class="fas fa-heart"></i>
+                </div>
+                <h3 style="color: var(--dark); margin-bottom: 1rem;">Compassion First</h3>
+                <p style="color: #666;">We understand the emotional bond you share with your pet and design everything with care.</p>
+            </div>
+            
+            <div class="value-card" style="padding: 2rem; border-radius: 15px; background: var(--light);">
+                <div class="value-icon" style="font-size: 3rem; color: var(--accent); margin-bottom: 1rem;">
+                    <i class="fas fa-rocket"></i>
+                </div>
+                <h3 style="color: var(--dark); margin-bottom: 1rem;">Innovation</h3>
+                <p style="color: #666;">Constantly improving our technology to provide better insights and recommendations.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Technology Section -->
+<section class="technology" style="padding: 6rem 2rem; background: var(--dark); color: white;">
+    <div class="container" style="max-width: 1200px; margin: 0 auto;">
+        <div class="tech-grid" style="display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: center;">
+            <div class="tech-content">
+                <h2 style="font-size: 2.5rem; margin-bottom: 1.5rem; color: var(--accent);">Advanced Technology</h2>
+                <p style="font-size: 1.1rem; line-height: 1.8; margin-bottom: 2rem; opacity: 0.9;">
+                    Powered by cutting-edge AI and machine learning, our system continuously learns from veterinary data 
+                    to provide increasingly accurate prescription analysis and diet recommendations.
+                </p>
+                <div class="tech-features" style="display: grid; gap: 1rem;">
+                    <div class="tech-feature" style="display: flex; align-items: center; gap: 1rem;">
+                        <i class="fas fa-check" style="color: var(--secondary);"></i>
+                        <span>OCR Technology for text extraction</span>
+                    </div>
+                    <div class="tech-feature" style="display: flex; align-items: center; gap: 1rem;">
+                        <i class="fas fa-check" style="color: var(--secondary);"></i>
+                        <span>Natural Language Processing</span>
+                    </div>
+                    <div class="tech-feature" style="display: flex; align-items: center; gap: 1rem;">
+                        <i class="fas fa-check" style="color: var(--secondary);"></i>
+                        <span>Medical Database Integration</span>
+                    </div>
+                    <div class="tech-feature" style="display: flex; align-items: center; gap: 1rem;">
+                        <i class="fas fa-check" style="color: var(--secondary);"></i>
+                        <span>Real-time Analysis</span>
+                    </div>
+                </div>
+            </div>
+            <div class="tech-visual" style="text-align: center;">
+                <div style="background: rgba(255,255,255,0.1); padding: 3rem; border-radius: 20px; backdrop-filter: blur(10px);">
+                    <i class="fas fa-brain" style="font-size: 4rem; color: var(--accent); margin-bottom: 1rem;"></i>
+                    <h3 style="margin-bottom: 1rem;">Smart Analysis</h3>
+                    <p>Our AI understands context and provides relevant, actionable insights.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CTA Section -->
+<section class="cta" style="padding: 6rem 2rem; background: var(--gradient); color: white; text-align: center;">
+    <div class="container" style="max-width: 600px; margin: 0 auto;">
+        <h2 style="font-size: 2.5rem; margin-bottom: 1rem;">Ready to Simplify Your Pet's Healthcare?</h2>
+        <p style="font-size: 1.2rem; margin-bottom: 2rem; opacity: 0.9;">
+            Join thousands of pet parents who trust PawScript for their furry family members.
+        </p>
+        <a href="{{ url_for('detection') }}" class="btn" style="background: white; color: var(--dark);">
+            <i class="fas fa-camera"></i> Scan Your First Prescription
+        </a>
+    </div>
+</section>
+{% endblock %}

@@ -1,0 +1,105 @@
+{% extends "base.html" %}
+
+{% block content %}
+<!-- Hero Section -->
+<section class="hero">
+    <div class="hero-content">
+        <h1>Understanding Your Dog's Health, Made Simple</h1>
+        <p>PawScript translates complex veterinary prescriptions into easy-to-understand language with personalized diet recommendations for your furry friend.</p>
+        <div class="hero-buttons">
+            <a href="{{ url_for('detection') }}" class="btn btn-primary">
+                <i class="fas fa-camera"></i> Scan Prescription
+            </a>
+            <a href="{{ url_for('about') }}" class="btn btn-secondary">
+                Learn More
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- Features Section -->
+<section class="features">
+    <h2 class="section-title">How PawScript Helps You & Your Dog</h2>
+    <div class="features-grid">
+        <div class="feature-card">
+            <div class="feature-icon">
+                <i class="fas fa-file-prescription"></i>
+            </div>
+            <h3>Prescription Decoder</h3>
+            <p>Upload your dog's prescription and get instant, easy-to-understand explanations of medications and instructions.</p>
+        </div>
+        
+        <div class="feature-card">
+            <div class="feature-icon">
+                <i class="fas fa-utensils"></i>
+            </div>
+            <h3>Smart Diet Plans</h3>
+            <p>Receive personalized feeding recommendations based on your dog's medication and health condition.</p>
+        </div>
+        
+        <div class="feature-card">
+            <div class="feature-icon">
+                <i class="fas fa-bell"></i>
+            </div>
+            <h3>Medication Reminders</h3>
+            <p>Get smart alerts for medication times and follow-up appointments to never miss a dose.</p>
+        </div>
+        
+        <div class="feature-card">
+            <div class="feature-icon">
+                <i class="fas fa-heartbeat"></i>
+            </div>
+            <h3>Health Tracking</h3>
+            <p>Monitor your dog's recovery progress with our simple health tracking features.</p>
+        </div>
+        
+        <div class="feature-card">
+            <div class="feature-icon">
+                <i class="fas fa-dog"></i>
+            </div>
+            <h3>Breed-Specific Advice</h3>
+            <p>Get tailored recommendations that consider your dog's breed, age, and size.</p>
+        </div>
+        
+        <div class="feature-card">
+            <div class="feature-icon">
+                <i class="fas fa-user-md"></i>
+            </div>
+            <h3>Vet Connection</h3>
+            <p>Easy sharing options to keep your veterinarian updated on your dog's progress.</p>
+        </div>
+    </div>
+</section>
+
+<!-- How It Works Section -->
+<section class="how-it-works" style="background: var(--light); padding: 6rem 2rem;">
+    <div class="container" style="max-width: 1200px; margin: 0 auto;">
+        <h2 class="section-title">Simple Steps to Peace of Mind</h2>
+        <div class="steps-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem; margin-top: 3rem;">
+            <div class="step-card" style="text-align: center; padding: 2rem;">
+                <div class="step-number" style="background: var(--gradient); color: white; width: 60px; height: 60px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 1.5rem; font-weight: bold; margin: 0 auto 1rem;">
+                    1
+                </div>
+                <h3>Upload Prescription</h3>
+                <p>Take a photo or upload a PDF of your dog's veterinary prescription</p>
+            </div>
+            
+            <div class="step-card" style="text-align: center; padding: 2rem;">
+                <div class="step-number" style="background: var(--gradient); color: white; width: 60px; height: 60px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 1.5rem; font-weight: bold; margin: 0 auto 1rem;">
+                    2
+                </div>
+                <h3>AI Analysis</h3>
+                <p>Our smart system reads and interprets the medical information</p>
+            </div>
+            
+            <div class="step-card" style="text-align: center; padding: 2rem;">
+                <div class="step-number" style="background: var(--gradient); color: white; width: 60px; height: 60px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 1.5rem; font-weight: bold; margin: 0 auto 1rem;">
+                    3
+                </div>
+                <h3>Get Results</h3>
+                <p>Receive clear explanations and personalized care recommendations</p>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}
